@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { MenupropiedadesComponent } from './@componets/menupropiedades/menupropiedades.component';
 import { MenupropiedadesModule } from './@componets/menupropiedades/menupropiedades.module';
 import { RegistroModule } from './@componets/registro/registro.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RegistroModule } from './@componets/registro/registro.module';
     UltimasModule,
     MenupropiedadesModule,
     MenuModule,
-    RegistroModule
+    RegistroModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
