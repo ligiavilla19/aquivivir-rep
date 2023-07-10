@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import'https://fonts.gstatic.com';
+@import'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap';
+
+@import'assets/css/bootstrap.min.css';
+@import'assets/css/owl.carousel.min.css';
+@import'assets/css/owl.theme.default.min.css';
+@import'assets/libs/fontawesome/css/all.css';
+@import'assets/css/animate.min.css';
+@import'assets/css/style.css';
+
