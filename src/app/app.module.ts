@@ -19,12 +19,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistroComponent } from './registro/registro.component';
+import { PublicarComponent } from './publicar/publicar.component';
+import { PlanesComponent } from './planes/planes.component';
 
 
 const appRoutes:Routes=[
 
   { path:'', component :HomeComponentComponent},
   { path:'registro', component: RegistroComponent},
+  { path:'publicar', component: PublicarComponent},
+  { path:'planes', component: PlanesComponent}
 
 ]
 
@@ -34,7 +38,9 @@ const appRoutes:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    PublicarComponent,
+    PlanesComponent
 
 
   ],
