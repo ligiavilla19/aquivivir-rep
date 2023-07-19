@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  mostrarComponenteRegistro: boolean = false; 
-
-  mostrarRegistro() {
-    this.mostrarComponenteRegistro = true;
-  }
+  mostrarComponenteRegistro: boolean = false;
 
 }

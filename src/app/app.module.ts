@@ -14,12 +14,29 @@ import { UltimasModule } from './@componets/ultimas/ultimas.module';
 import { AppComponent } from './app.component';
 import { MenupropiedadesComponent } from './@componets/menupropiedades/menupropiedades.component';
 import { MenupropiedadesModule } from './@componets/menupropiedades/menupropiedades.module';
-import { RegistroModule } from './@componets/registro/registro.module';
+import { RegistroModule } from './registro/registro.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { RouterModule, Routes } from '@angular/router';
+import { RegistroComponent } from './registro/registro.component';
+
+
+const appRoutes:Routes=[
+
+  { path:'', component :HomeComponentComponent},
+  { path:'registro', component: RegistroComponent},
+
+]
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponentComponent
+
+
   ],
   imports: [
     BrowserModule,
@@ -32,9 +49,10 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarModule,
     UltimasModule,
     MenupropiedadesModule,
-    MenuModule,
     RegistroModule,
-    AppRoutingModule
+    MenuModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
